@@ -11,7 +11,7 @@ def menu_opcoes():
     print('\nVeja como usar nosso sistema:\n'
           '[A] Para adicionar um produto à lista.\n'
           '[R] Para remover um produto da lista.\n'
-          '[0] Para sair do programa a qualquer momento.')
+          '[0] Para sair do programa.')
     
     
 def cabecalho_final():
