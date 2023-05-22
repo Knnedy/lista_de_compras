@@ -1,4 +1,3 @@
-
 def cabecalho_mini_box_online():
     msg = 'Faça seu Mercado sem sair de casa!'
     print('*' * int(len(msg) + 20))
