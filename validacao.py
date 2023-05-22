@@ -24,12 +24,19 @@ def validar_preco_produto():
     while True:
         try:
             preco_produto = float(input('Preço do produto: R$ '))
-            if not isinstance(preco_produto, (int, float)):
-                print('O preço do produto deve ser um valor numérico. Tente novamente.')
-                continue
-            if preco_produto <= 0:
-                print('O preço do produto deve ser maior que zeo. Tente novamente.')
-                continue
             return preco_produto
         except ValueError:
             print('Valor inválido. Tente novamente.')
+
+
+def validar_quantidade_produto():
+    while True:
+        try:
+            qtd = int(input('Quantas unidades vai levar? '))
+            if qtd <= 0:
+                print('Quantidade inválida. A quantidade deve ser maior que 0.')
+                continue
+            return qtd
+        except ValueError:
+            print('Valor inválido. A quantidade dever ser um número inteiro.')
+            

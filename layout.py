@@ -8,10 +8,10 @@ def cabecalho_mini_box_online():
 
     
 def menu_opcoes():
-    print('\nVeja como usar nosso sistema:\n'
-          '[A] Para adicionar um produto à lista.\n'
-          '[R] Para remover um produto da lista.\n'
-          '[0] Para sair do programa.')
+    print('\n[A] adicionar um produto à lista.\n'
+          '[R] remover um produto da lista.\n'
+          '[V] ver a sua lista.\n'
+          '[S] sair do programa.')
     
     
 def cabecalho_final():
