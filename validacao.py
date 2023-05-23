@@ -1,5 +1,3 @@
-
-
 def validar_nome_produto(lista_nome_produtos):
     while True:
         try:

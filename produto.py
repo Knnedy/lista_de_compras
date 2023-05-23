@@ -1,6 +1,3 @@
-from layout import msg_lista_compras, msg_lista_compras_atualizada
-
-
 def adicionar_produto(lista_nomes, lista_precos, lista_qtd_prod):
     nome_produto = input('Informe o nome do produto: ').lower()
     if nome_produto == '0':
@@ -38,7 +35,6 @@ def exibir_lista_compras_cliente(lista_nomes,
     return True
     
 
-        
 def remover_produto(lista_nomes,
                     lista_precos,
                     lista_qtd_prod):
