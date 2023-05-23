@@ -17,16 +17,16 @@ def menu_opcoes():
     
 def msg_lista_compras():
     msg = 'SUA LISTA DE COMPRAS:'
-    print('*' * int(len(msg) + 33))
-    print(f'{msg: ^55}')
-    print('*' * int(len(msg) + 33))
+    print('*' * int(len(msg) + 44))
+    print(f'{msg: ^69}')
+    print('*' * int(len(msg) + 44))
 
 
 def msg_lista_compras_atualizada():
     msg = 'SUA LISTA DE COMPRAS ATUALIZADA:'
-    print('*' * int(len(msg) + 22))
-    print(f'{msg: ^56}')
-    print('*' * int(len(msg) + 22))
+    print('*' * int(len(msg) + 33))
+    print(f'{msg: ^71}')
+    print('*' * int(len(msg) + 33))
     
 
 def msg_encerrou_programa():
