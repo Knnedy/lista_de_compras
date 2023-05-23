@@ -29,13 +29,9 @@ def msg_lista_compras_atualizada():
     print('*' * int(len(msg) + 33))
     
 
-def msg_encerrou_programa():
-    return 'Você saiu do programa.'
-
-
 def cabecalho_final():
     msg = 'OBRIGADO PELA PREFERÊNCIA. VOLTE SEMPRE.'
     print()
-    print('*' * int(len(msg) + 14))
-    print(f'{msg: ^54}')
-    print('*' * int(len(msg) + 14))
+    print('*' * int(len(msg) + 25))
+    print(f'{msg: ^67}')
+    print('*' * int(len(msg) + 25))

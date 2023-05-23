@@ -1,16 +1,11 @@
 from layout import *
 from produto import *
 from validacao import *
+from listas import *
 
 
 def main():
     cabecalho_mini_box_online()
-    
-    lista_nome_produtos = []
-    lista_preco_produtos = []
-    lista_qtd_prod = []
-    lista_valor_total_produtos = []
-    
     while True:
         while True:
             menu_opcoes()
@@ -22,13 +17,13 @@ def main():
             
                 preco_produto = validar_preco_produto()
                 qtd_produto = validar_quantidade_produto()
-                calculo_valor_total_produtos = calcular_valor_total_por_produto(preco_produto,
-                                                                                qtd_produto)
-                
+                valor_total_compras = calcular_valor_total_por_produto(preco_produto,
+                                                                       qtd_produto)
+
                 lista_nome_produtos.append(nome_produto)
                 lista_preco_produtos.append(preco_produto)
                 lista_qtd_prod.append(qtd_produto)
-                lista_valor_total_produtos.append(calculo_valor_total_produtos)
+                lista_valor_total_produtos.append(valor_total_compras)
 
             elif add_remover == 'r':
                 remover_produto(lista_nome_produtos, lista_preco_produtos, lista_qtd_prod)
@@ -49,7 +44,6 @@ def main():
                                              lista_qtd_prod)
                 valor_total = calcular_valor_total(lista_preco_produtos, lista_qtd_prod)
                 print(f'Total das compras: {valor_total:.2f}')
-                msg_encerrou_programa()
                 break
             else:
                 print('Opção inválida.')
