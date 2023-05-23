@@ -1,9 +1,10 @@
 def cabecalho_mini_box_online():
-    msg = 'Faça seu Mercado sem sair de casa!'
+    msg = 'FAÇA SUAS COMPRAS DE MERCADO SEM SAIR DE CASA'
     print('*' * int(len(msg) + 20))
-    print(f'{msg: ^54}')
+    print(f'{msg: ^67}')
     print('*' * int(len(msg) + 20))
-    print('Seja bem vindo ao nosso supermercado e fique a vontade')
+    msg2 = 'SEJA BEM VINDO E VOLTE SEMPRE'
+    print(f'{msg2: ^67}')
     print('*' * int(len(msg) + 20))
 
     
@@ -14,8 +15,26 @@ def menu_opcoes():
           '[S] sair do programa.')
     
     
+def msg_lista_compras():
+    msg = 'SUA LISTA DE COMPRAS:'
+    print('*' * int(len(msg) + 33))
+    print(f'{msg: ^55}')
+    print('*' * int(len(msg) + 33))
+
+
+def msg_lista_compras_atualizada():
+    msg = 'SUA LISTA DE COMPRAS ATUALIZADA:'
+    print('*' * int(len(msg) + 22))
+    print(f'{msg: ^56}')
+    print('*' * int(len(msg) + 22))
+    
+
+def msg_encerrou_programa():
+    return 'Você saiu do programa.'
+
+
 def cabecalho_final():
-    msg = 'Obrigado pela preferência. Volte sempre.'
+    msg = 'OBRIGADO PELA PREFERÊNCIA. VOLTE SEMPRE.'
     print()
     print('*' * int(len(msg) + 14))
     print(f'{msg: ^54}')

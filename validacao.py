@@ -10,10 +10,6 @@ def validar_nome_produto(lista_nome_produtos):
             if nome_produto in lista_nome_produtos:
                 print('Nome do produto ja existe. Tente novamente.')
                 continue
-            if len(nome_produto) < 3 or len(nome_produto) > 50:
-                print(
-                    'Nome do produto deve ter entre 3 e 50 caracteres. Tente novamente.')
-                continue
             # Realize outras validações, se necessário
             return nome_produto
         except ValueError:
